@@ -9,24 +9,20 @@ public class Email {
 	private String department;
 	private String email;
 	private String alternateEmail;
-	private int mailboxCapacity = 500;
+	private int mailboxCapacity = 600;
 	private int defaultLength = 10;
 	private String companySuffix = "yash.com";
 	
-	//constructor to receive first and last name
+	//constructor to receive first and last name.
 	public Email(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		
-		
-		//call method for department
 		this.department=setDepartment();
 		
-		//call a methd returns a random password
 		this.password= randompassword(this.defaultLength);
 		System.out.println("YOUR PASSWORD IS: "+this.password);
 		
-		//to create email combine all elements
 		email = this.firstName.toLowerCase()+ "."+this.lastName.toLowerCase()+"@"+this.department+"."+companySuffix;
 		
 	}
@@ -76,7 +72,7 @@ public class Email {
 		return alternateEmail;
 	}
 	
-	//change password
+	//getter setter password
 	public void changePassword(String password) {
 		this.password =password;
 	}
