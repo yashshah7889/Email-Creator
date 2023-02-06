@@ -1,0 +1,5 @@
+It generates email with syantx like: firstname.lastname@department.company.com.
+App also determine department, if none leave blank
+it generates random string for password.
+set methods to change password, set mailbox capacity, and define an alternate email address.
+have a get methods to dispaly name, email,and mailbox capacity.
